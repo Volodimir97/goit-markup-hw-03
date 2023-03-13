@@ -1,0 +1,158 @@
+:root {
+  --primary-text-color: #2e2f42;
+  --primary-white-color: #ffffff;
+  --main-light-color: #404bbf;
+  --main-font-color: #434455;
+  --accent-color: #4d5ae5;
+  --secondary-font-color: #e7e9fc;
+  --secondory-accent-color: #f4f4fd;
+}
+body {
+  font-family: Roboto;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+  font-size: 16px;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+/* HEDEAR */
+.cursor {
+  cursor: pointer;
+}
+.logo {
+  font-style: normal;
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo-part {
+  color: var(--primary-text-color);
+}
+.nav-link {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--main-light-color);
+}
+.contact-link {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--main-font-color);
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--main-light-color);
+}
+/* MAIN */
+.hero {
+  background-color: var(--primary-text-color);
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+.hero-but {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.hero-but:hover {
+  background-color: var(--main-light-color);
+}
+.section-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.section-description {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-font-color);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* MAIN PORTFOLIO  */
+/* but */
+.list-but:hover,
+.list-but:focus {
+  color: var(--secondory-accent-color);
+  background-color: var(--main-light-color);
+}
+
+.but:hover {
+  color: var(--primary-white-color);
+}
+
+/* MAIN SERVICE */
+.services-naam {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+}
+.services-specifics {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-font-color);
+}
+/* footer */
+.foot {
+  background-color: var(--primary-text-color);
+}
+
+.logo-part-foot {
+  color: var(--secondory-accent-color);
+}
+.foot-info {
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+  color: var(--secondary-font-color);
+}
