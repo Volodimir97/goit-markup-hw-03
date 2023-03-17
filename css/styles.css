@@ -23,6 +23,15 @@ p,
 ul {
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -113,8 +122,12 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--main-light-color);
+}
+.nav-link.active {
   color: var(--main-light-color);
 }
 
@@ -199,6 +212,7 @@ ul {
   width: 264px;
   padding: 0px;
 }
+
 .werk {
   display: flex;
   justify-content: space-between;
@@ -211,6 +225,7 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+
 .werk-item-text {
   display: flex;
   flex-direction: column;
@@ -226,6 +241,7 @@ ul {
 .section-item-hero {
   background: var(--secondory-accent-color);
 }
+
 .section-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -233,6 +249,7 @@ ul {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
+
 .section-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -261,6 +278,7 @@ ul {
   color: var(--secondory-accent-color);
   background-color: var(--main-light-color);
 }
+
 .list-but {
   padding: 12px 24px;
   border-radius: 4px;
@@ -275,6 +293,7 @@ ul {
   order: 4;
   flex-grow: 0;
 }
+
 .but-item {
   margin-right: 0px;
 }
@@ -289,20 +308,23 @@ ul {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
+
 .services:nth-child(-n + 3) {
   margin-top: 72px;
 }
+
 .services-item {
   flex-basis: calc((100% - 48px) / 3);
 }
+
 .services:nth-last-child(-n + 3) {
   margin-bottom: 96px;
 }
-.service-border {
-  background: var(--primary-white-color);
 
+.service-border {
+  padding: 32px 16px;
   border: 1px solid var(--secondary-font-color);
-  margin-top: -7px;
+  border-top: none;
 }
 
 .services-naam {
@@ -313,6 +335,7 @@ ul {
   margin-left: 16px;
 
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .services-specifics {
   line-height: 1.5;
@@ -331,9 +354,11 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .logo-part-foot {
   color: var(--secondory-accent-color);
 }
+
 .foot-info {
   margin-top: 16px;
 
@@ -341,4 +366,5 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
+  margin-top: 16px;
 }
